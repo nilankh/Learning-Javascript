@@ -1,0 +1,26 @@
+#togglebutton{
+    background-color: white;
+    width: 120px;
+    height: 40px;
+    border: 2px solid lightcoral;
+    border-radius: 20px;
+    margin: 50px auto;
+    cursor: pointer;
+    position: relative;
+}
+
+#circle{
+    
+    width: 40px;
+    height: 40px;
+    background-color: teal;
+    border-radius: 50%;
+    transition-duration: 1s;
+    margin-left: 0px;
+}
+
+h1{
+    font-size: 5rem;
+    margin: 100px auto;
+    text-align: center;
+}
