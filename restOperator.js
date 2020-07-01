@@ -1,7 +1,13 @@
-let displayColors = function() {
+// let displayColors = function() {
+//     console.log(message);
+//     for(let i in arguments){
+//         console.log(arguments[i]);
+//     }
+// }
+let displayColors = function(message, ...colors) {
     console.log(message);
-    for(let i in arguments){
-        console.log(arguments[i]);
+    for(let i in colors){
+        console.log(colors[i]);
     }
 }
 
