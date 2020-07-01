@@ -1,9 +1,8 @@
-let employee = ["Nilank", "Nikhil","Male"];
+let employee = ["Nilank", "Nikhil", "Male"];
 
-// let [fname, lname, gender] = employee;
-let [, , gender] = employee;
+let [fname, ...elements] = employee;
 
-// console.log(fname);
-// console.log(lname);
-console.log(gender);
+console.log(fname);
+console.log(elements);
+// console.log(gender);
 
