@@ -9,7 +9,8 @@ console.log(getRegValue());
 // const getArrowValue = () => 12;
 
 // const getArrowValue = (m) => 12*m;
-const getArrowValue = m => 12*m;
+// const getArrowValue = m => 12*m;
+const getArrowValue = (m, bonus) => 12*m+bonus;
 
 
-console.log(getArrowValue(5));
+console.log(getArrowValue(5, 50));
