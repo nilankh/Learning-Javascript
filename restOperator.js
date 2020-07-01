@@ -1,4 +1,5 @@
 let displayColors = function() {
+    console.log(message);
     for(let i in arguments){
         console.log(arguments[i]);
     }
