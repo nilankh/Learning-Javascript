@@ -3,6 +3,8 @@ let displayColors = function() {
         console.log(arguments[i]);
     }
 }
-displayColors('Red');
-displayColors('Red','Blue');
-displayColors('Red','Blue','Green');
+
+let message = "List of colors"
+displayColors(message,'Red');
+displayColors(message,'Red','Blue');
+displayColors(message,'Red','Blue','Green');
