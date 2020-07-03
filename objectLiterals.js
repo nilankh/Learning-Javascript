@@ -12,15 +12,31 @@ let person = {
 };
 
 
-function createPerson(firstName, lastName) {
+// function createPerson(firstName, lastName) {
+//     let fullname = firstName + " " + lastName;
+//     return {firstName, lastName, fullname}
+// }
+
+function createPerson(firstName, lastName, age) {
     let fullname = firstName + " " + lastName;
-    return {firstName, lastName, fullname}
+    return {
+        firstName, 
+        lastName, 
+        fullname,
+        // isSenior: function() {
+        //     return age > 60;
+        // }}
+        // this is also we can write this
+        isSenior() {
+            return age > 60;
+        }}
+        
 }
-let p = createPerson("Nilank", "Nikhil");
+let p = createPerson("Nilank", "Nikhil", 21);
 console.log(p.firstName);
 console.log(p.lastName);
 console.log(p.fullname);
-
+console.log(p.isSenior());
 
 
 // console.log(person.firstName);
