@@ -12,6 +12,18 @@ let person = {
 };
 
 
+// aise v kr skte h space de kr beech bs uske lia hme fir "" iske andar rkhna hoga
+let ln = "last name";//we can also use variables as property names
+let person2 = {
+    "first name":"chandler",
+    [ln]: "Punj"//but we have to used like this in square bracket when we are using variable as property names
+};
+console.log(person2["first name"]);
+console.log(person2)
+
+
+
+
 // function createPerson(firstName, lastName) {
 //     let fullname = firstName + " " + lastName;
 //     return {firstName, lastName, fullname}
