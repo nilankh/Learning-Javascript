@@ -9,6 +9,8 @@ const http = new easyHTTP2();
 //     }
 // });
 
+
+
 // get single post
 // GET POSTS
 // http.get('https://jsonplaceholder.typicode.com/posts/1', function(err, post){
@@ -35,13 +37,23 @@ const data = {
 // });
 
 // UPDATE POST
-http.put("https://jsonplaceholder.typicode.com/posts/1", data, function (
-  err,
-  post
-) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log(post);
-  }
+// http.put("https://jsonplaceholder.typicode.com/posts/1", data, function (
+//   err,
+//   post
+// ) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(post);
+//   }
+// });
+
+
+// delete post
+http.delete('https://jsonplaceholder.typicode.com/posts/1', function(err, response){
+    if(err) {
+        console.log(err);
+    }else{
+        console.log(response);
+    }
 });
