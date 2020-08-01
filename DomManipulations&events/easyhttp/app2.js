@@ -21,15 +21,27 @@ const http = new easyHTTP2();
 
 // Create data
 const data = {
-  title: "Custom Post",
+  title: "Custom Post changeds",
   body: "This is a custom post",
 };
 
 // create post
-http.post("https://jsonplaceholder.typicode.com/posts", data, function (err, post) {
-    if(err){
-        console.log(err)
-    }else{
-        console.log(post)
-    }
+// http.post("https://jsonplaceholder.typicode.com/posts", data, function (err, post) {
+//     if(err){
+//         console.log(err)
+//     }else{
+//         console.log(post)
+//     }
+// });
+
+// UPDATE POST
+http.put("https://jsonplaceholder.typicode.com/posts/1", data, function (
+  err,
+  post
+) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(post);
+  }
 });
